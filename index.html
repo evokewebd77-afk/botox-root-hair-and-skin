@@ -492,7 +492,7 @@
             line-height: 1.08;
             margin-bottom: 1.4rem;
             letter-spacing: -0.02em;
-            color: #1a1a1a; text-shadow: 0 1px 2px rgba(255,255,255,0.75);
+            color: var(--text-primary);
         }
 
         .hero h1 .highlight {
@@ -502,7 +502,8 @@
         }
 
         .hero-description {
-            color: #333533; font-weight: 500; text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+            color: var(--text-secondary);
+            font-weight: 500;
             margin-bottom: 2.2rem;
             max-width: 620px;
             font-size: 1.08rem;
@@ -1269,6 +1270,12 @@
             flex-direction: column;
             gap: 0.9rem;
             margin-top: 0.5rem;
+        }
+
+        #viewFullPosterBtn {
+            background: var(--brand-plum);
+            color: #ffffff;
+            box-shadow: var(--shadow-md);
         }
 
         /* Lightbox Modal */
@@ -2305,6 +2312,10 @@
                 padding: 0.4rem 1rem;
             }
 
+            .top-bar-contact {
+                display: none;
+            }
+
             .nav-links {
                 display: none;
                 position: absolute;
@@ -2351,6 +2362,10 @@
 
             .btn {
                 width: 100%;
+            }
+
+            .hero-cta-group .btn-primary {
+                width: min(100%, 270px);
             }
 
             .hero-visual {
@@ -2448,7 +2463,7 @@
         <div>
             Bellevue, WA • <span class="accent">Dermatologist-Led Practice</span> • Natalie Kash, MD, FAAD
         </div>
-        <div>
+        <div class="top-bar-contact">
             Direct Inquiries: <a href="tel:4255521339">(425) 552-1339</a>
         </div>
     </div>
@@ -3116,7 +3131,7 @@
     <div class="floating-actions" aria-label="Quick contact actions">
         <a class="floating-action floating-message" href="sms:+14255521339" aria-label="Message Root Hair & Skin">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H6l-3 2v-5.5A7.5 7.5 0 1 1 20 11.5Z"/><circle cx="8" cy="12" r="0.7"/><circle cx="12" cy="12" r="0.7"/><circle cx="16" cy="12" r="0.7"/></svg>
-            <span>iMessage</span>
+            <span>Message</span>
         </a>
         <a class="floating-action floating-book" href="#contact-consultation" aria-label="Book a consultation">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M12 14v5m-2.5-2.5h5"/></svg>
